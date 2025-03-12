@@ -464,7 +464,7 @@ Camera:
   m_GameObject: {fileID: 330585543}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 4
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -1548,6 +1548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1391444212}
   - component: {fileID: 1391444213}
+  - component: {fileID: 1391444214}
   - component: {fileID: 1391444211}
   - component: {fileID: 1391444210}
   m_Layer: 0
@@ -1642,6 +1643,8 @@ MonoBehaviour:
   _jumpKey: 32
   _jumpForce: 8
   _jumpCooldown: 0.5
+  _airMultiplier: 0.2
+  _airDrag: 0.75
   _canJump: 1
   _slideKey: 113
   _slideMultiplier: 2
@@ -1651,6 +1654,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   _groundDrag: 5
+--- !u!114 &1391444214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391444209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e006883e4f8c4e14991de9e282493812, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1453916767
 GameObject:
   m_ObjectHideFlags: 0
@@ -1790,7 +1805,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.5, z: 0}
-  m_LocalScale: {x: 10, y: 1, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
